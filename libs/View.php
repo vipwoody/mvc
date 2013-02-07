@@ -6,8 +6,15 @@ class View {
 		//echo "this is the view";
 	}
 
-	public function render($name)
+	public function render($name, $noinclude = false)
 	{
-		require 'views/' .$name . '.php';
+		if($noinclude == true){
+			require 'views/' .$name. '.php';
+		}
+		else{
+			require 'views/header.php';
+			require 'views/' .$name . '.php';
+			require 'views/footer.php';
+		}
 	}
 }
