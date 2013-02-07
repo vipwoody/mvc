@@ -3,8 +3,8 @@
 <html>
 <head>
 	<title>Test</title>
-	<link rel="stylesheet" href="public/css/default.css" />
-	<script src="public/js/jquery.js"></script>
+	<link rel="stylesheet" href="<?php echo URL; ?>public/css/default.css" />
+	<script src="<?php echo URL; ?>public/js/jquery.js"></script>
 	<script>
 	// $(function(){
 	// 	alert(1);
@@ -16,8 +16,8 @@
 	<div id="header">
 		header
 		<br />
-		<a href="index">Index</a>
-		<a href="help">Help</a>
-		<a href="login">Login</a>
+		<a href="<?php echo URL; ?>index">Index</a>
+		<a href="<?php echo URL; ?>help">Help</a>
+		<a href="<?php echo URL; ?>login">Login</a>
 	</div>
 <div id="content">
