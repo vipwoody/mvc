@@ -8,7 +8,7 @@ class Session
 		@session_start();
 	}
 
-	public static function set()
+	public static function set($key, $value)
 	{		
 		$_SESSION[$key] = $value;
 	}
